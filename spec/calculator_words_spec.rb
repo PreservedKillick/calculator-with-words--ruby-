@@ -23,4 +23,7 @@ describe ('calculator_words') do
   it("returns floats for numbers") do
     calculator_words("What is 20 divided by 6").should(eq(3.33))
   end
+  it("returns an answer for a math question with multiple operations") do
+    calculator_words("What is 4 plus 6 divided by 2?").should(eq(7))
+  end
 end
